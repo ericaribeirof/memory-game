@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!---
+    <div class="buttons">
+                        <button type="button" class="btn btn-start" onclick="sort_cards()">Start</button>
+                        <button type="button" class="btn btn-reset">Reset</button>
+                </div>
+                padding:0.1%
+                width:19.8%
+                height:520px
+
+                image_ref.sort(()=>( Math.round(Math.random())-0.5));
+    minimo: 
+    grid-template-columns: 105px 105px 105px 105px;
+    grid-template-rows: 50% 50% 50% 50%;
+    background-image: url("img/Shadowhunters-logo.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+                
+--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shadowhunters Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <p> <h1>SHADOWHUNTERS MEMORY GAME</h1> </p> 
+    </header>
+    <main>
+        <section class="memory-game">
+            <div class="game-info">
+                <div class="buttons">
+                    <button type="button" class="btn btn-start" id="start-button" onclick="start()"> Start </button>
+                    <button type="button" class="btn btn-reset" id="reset-button"  onclick="reset()" disabled="true"> Reset</button>
+                </div>
+                <div class="score">
+                    <div id="score-value" >Score = 0</div> 
+                    <div id="attempts-value" >Attempts = 0</div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="memory-card" id="1" >
+                    <div class="front-face" id="frontface-1"></div>
+                    <div class="back-face" ></div>
+                </div>
+                <div class="memory-card" id="2" >
+                    <div class="front-face" id="frontface-2"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="3" >
+                    <div class="front-face" id="frontface-3"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="4" >
+                    <div class="front-face" id="frontface-4"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="5" >
+                    <div class="front-face" id="frontface-5"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="6">
+                    <div class="front-face" id="frontface-6"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="7" >
+                    <div class="front-face" id="frontface-7"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="8">
+                    <div class="front-face" id="frontface-8"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="9" >
+                    <div class="front-face" id="frontface-9"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="10" >
+                    <div class="front-face" id="frontface-10"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="11" >
+                    <div class="front-face" id="frontface-11"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="12" >
+                    <div class="front-face" id="frontface-12"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="13" >
+                    <div class="front-face" id="frontface-13"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="14" >
+                    <div class="front-face" id="frontface-14"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="15" >
+                    <div class="front-face" id="frontface-15"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="16">
+                    <div class="front-face" id="frontface-16"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="17" >
+                    <div class="front-face" id="frontface-17"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="18" >
+                    <div class="front-face" id="frontface-18"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="19" >
+                    <div class="front-face" id="frontface-19"></div>
+                    <div class="back-face"></div>
+                </div>
+                <div class="memory-card" id="20" >
+                    <div class="front-face" id="frontface-20"></div>
+                    <div class="back-face"></div>
+                </div>
+              </div>
+              
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+</body>
+</html>
