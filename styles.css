@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background: rgba(1, 133, 107, 0.8);
+    font-family: 'Cinzel', serif;
+    font-size:12pt;
+}
+
+header{
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+main{
+    background-color: white;
+    border-radius:10px;
+    padding: 2%;
+    width: 97vw;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+section{
+    background-color:rgba(212, 175, 55,0.8);
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 0.5%;
+}
+
+div{
+    border-radius: 10px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 425px;
+    perspective: 1000px;
+}
+
+.memory-card {
+    margin: 0.2%;
+    width: 24.6%;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+ .memory-card:active {
+   transform: scale(0.97);
+   transition: transform .5s;
+ }
+
+ .memory-card.flipped {
+    transform: rotateY(180deg);
+  }
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+.back-face, .front-face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("images/Shadowhunters-logo.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    backface-visibility: hidden;
+    
+}
+
+.game-info{
+    margin-bottom: 7px;
+    height: 50px;
+    display: flex;
+
+}
+
+.buttons{
+    width: 50%;
+    display:block;
+}
+
+.score{
+    background-color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    width: 50%;
+    height: 100%;
+    padding-top: 6px;
+    padding-left: 6px;
+    margin-top: 1px;
+    display: block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+#score-value, #attempts-value{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    font-family: 'Cinzel', serif; 
+    width: 95%;
+    padding: 2px;
+    margin-top:1px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+    transform: scale(0.90);
+  }
+
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+@media (min-width:600px){
+    .card-container{
+        height:75vh;
+    }
+    .memory-card{
+        margin: 0.1%;
+        width: 19.8%;
+    }
+
+    .game-info{
+        height: 25px;
+    }
+
+    .buttons{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .buttons{
+        width: 55%;
+    }
+    
+    .score{
+        font-size: 12pt;
+        width: 45%;
+        padding-top:2px;
+        padding-left: 10px;
+        display: inline-block;
+    }
+
+    #score-value, #attempts-value{
+        display: inline-block;
+        width: 45%;
+    }
+
+    .btn{
+        width: 47%;
+        display: inline-block;
+    }
+
+
+}
