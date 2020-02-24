@@ -7,7 +7,7 @@
 }
 
 body{
-    background: rgba(1, 133, 107, 0.8);
+    background: rgba(99, 99, 99, 0.8);
     font-family: 'Cinzel', serif;
     font-size:12pt;
 }
@@ -30,7 +30,7 @@ main{
 }
 
 section{
-    background-color:rgba(212, 175, 55,0.8);
+    background-color:rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     width: 100%;
     margin: auto;
