@@ -1,27 +1,38 @@
 var hasFlippedCard = false;
 var firstCard, secondCard;
-var lockBoard = false
+var lockBoard = false;
 var image_ref = [
-    'images/Alec.jpg',
-    'images/Alec.jpg',
-    'images/Aline.jpg',
-    'images/Aline.jpg',
-    'images/Clary.jpg',
-    'images/Clary.jpg',
-    'images/Izzy.jpg',
-    'images/Izzy.jpg',
-    'images/Jace.jpg',
-    'images/Jace.jpg',
-    'images/Luke.jpg',
-    'images/Luke.jpg',
-    'images/Magnus.jpg',
-    'images/Magnus.jpg',
-    'images/Maia.jpg',
-    'images/Maia.jpg',
-    'images/Meliorn.jpg',
-    'images/Meliorn.jpg',
-    'images/Simon.jpg',
-    'images/Simon.jpg'
+    'images/Jimin.jpeg',
+    'images/Jimin.jpeg',
+    'images/Taehyung.jpeg',
+    'images/Taehyung.jpeg',
+    'images/Namjoon.jpeg',
+    'images/Namjoon.jpeg',
+    'images/Jungkook.jpeg',
+    'images/Jungkook.jpeg',
+    'images/Seokjin.jpeg',
+    'images/Seokjin.jpeg',
+    'images/Yoongi.jpeg',
+    'images/Yoongi.jpeg',
+    'images/Hoseok.jpeg',
+    'images/Hoseok.jpeg',
+    'images/Jimin-1.jpeg',
+    'images/Jimin-1.jpeg',
+    'images/Taehyung-1.jpeg',
+    'images/Taehyung-1.jpeg',
+    'images/Namjoon-1.jpeg',
+    'images/Namjoon-1.jpeg',
+    'images/Jungkook-1.jpeg',
+    'images/Jungkook-1.jpeg',
+    'images/Seokjin-1.jpeg',
+    'images/Seokjin-1.jpeg',
+    'images/Yoongi-1.jpeg',
+    'images/Yoongi-1.jpeg',
+    'images/Hoseok-1.jpeg',
+    'images/Hoseok-1.jpeg',
+    'images/BTS.jpeg',
+    'images/BTS.jpeg',
+
 ];
 var attempts = 0;
 var score = 0;
@@ -35,7 +46,7 @@ function start(){
 }
 
 function reset(){
-    for(var i=0;i<20;i++){
+    for(var i=0;i<30;i++){
         var temp_id = i+1
         var temp_card = document.getElementById(temp_id)
         if(temp_card.classList.contains('flipped')){
@@ -57,7 +68,7 @@ function reset(){
 }
 
 function addClick(){
-    for(var i=0;i<20;i++){
+    for(var i=0;i<30;i++){
         var temp_id = i+1
         var temp_card = document.getElementById(temp_id)
         temp_card.addEventListener('click',flipCard);
@@ -66,7 +77,7 @@ function addClick(){
 
 function sortCards(){
     image_ref.sort(()=>( Math.round(Math.random())-0.5));
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 30; i++) {
         var temp_id = "frontface-"+(i+1);
         var temp_pic = image_ref[i];
         var temp_url = `url("${temp_pic}")`;
@@ -101,7 +112,7 @@ function checkMatch(){
     }
     attempts+=1;
     updateScores();
-    if (pairsFound == 10){
+    if (pairsFound == 15){
         setTimeout(() => {
            alert("CONGRATULATIONS!");
         }, 500);
