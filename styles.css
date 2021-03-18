@@ -7,21 +7,21 @@
 }
 
 body{
-    background: rgba(99, 99, 99, 0.8);
-    font-family: 'Cinzel', serif;
+    background: rgb(46, 96, 126);
+    font-family: 'Cenzil', serif;
     font-size:12pt;
 }
 
 header{
+    font-family: 'Monoton';
     margin: 10px;
     text-align: center;
-    font-weight: bold;
-    color: white;
+    color: rgb(255, 229, 157);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 main{
-    background-color: white;
+    background-color:rgb(202, 86, 86);
     border-radius:10px;
     padding: 2%;
     width: 97vw;
@@ -30,7 +30,6 @@ main{
 }
 
 section{
-    background-color:rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     width: 100%;
     margin: auto;
@@ -49,7 +48,7 @@ div{
 
 .memory-card {
     margin: 0.2%;
-    width: 24.6%;
+    width: 19.6%;
     -webkit-transition: all 600ms;
     transition: all 600ms;
     transform: scale(1);
@@ -75,7 +74,7 @@ div{
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url("images/Shadowhunters-logo.jpg");
+    background-image: url("images/BTS-logo.png");
     background-size: cover;
     background-position: 50% 50%;
     backface-visibility: hidden;
@@ -97,7 +96,7 @@ div{
 .score{
     background-color: white;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 12pt;
     width: 50%;
     height: 100%;
     padding-top: 6px;
@@ -114,7 +113,7 @@ div{
 }
 
 .btn{
-    font-family: 'Cinzel', serif; 
+    font-family: 'Cenzil', serif; 
     width: 95%;
     padding: 2px;
     margin-top:1px;
@@ -145,8 +144,8 @@ footer{
         height:75vh;
     }
     .memory-card{
-        margin: 0.1%;
-        width: 19.8%;
+        margin: 0.2%;
+        width: 16.25%;
     }
 
     .game-info{
@@ -176,7 +175,7 @@ footer{
     }
 
     .btn{
-        width: 47%;
+        width: 45%;
         display: inline-block;
     }
 
