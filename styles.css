@@ -73,7 +73,7 @@ div{
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url("images/BTS-logo.png");
+    background-image: url("images/logo.jpg");
     background-size: cover;
     background-position: 50% 50%;
     backface-visibility: hidden;
